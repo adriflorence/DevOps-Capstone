@@ -22,11 +22,11 @@ Step 3: Pick AWS Kubernetes as a Service, or build your own Kubernetes cluster.
 - It should create the EC2 instances, set the correct networking settings and deploy software to these instances.
 - As a final step, the Kubernetes cluster will need to be initialized. The Kubernetes cluster initialization can either be done by hand or with Ansible/Cloudformation.
 
-Step 4: Build your pipeline
+Step 4: Build the pipeline
 - Construct the pipeline in the GitHub repository.
 - Set up all the steps that the pipeline will include.
 - Configure a deployment pipeline.
 
-Step 5: Test your pipeline
+Step 5: Test the pipeline
 - Perform builds on the pipeline.
 
