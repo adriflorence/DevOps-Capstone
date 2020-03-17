@@ -18,7 +18,7 @@ pipeline {
     stage('Push Docker Hub') {
       steps {
         withCredentials([usernamePassword(credentialsId: 'docker-hub', passwordVariable: 'dockerhubpassword', usernameVariable: 'dockerhubuser')]) {
-          sh '''docker login -u ${dockerhubuser} -p ${dockerhubpwd}
+          sh '''docker login -u ${dockerhubuser} -p ${dockerhubpassword}
             docker tag adriflorence/capstone adriflorence/capstone:latest
             docker push adriflorence/capstone:latest'''
         }
