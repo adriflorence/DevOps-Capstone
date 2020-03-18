@@ -28,7 +28,7 @@ pipeline {
     stage('Deploy To K8S Cluster'){
       steps {
         withAWS(credentials: 'aws-credentials', region: 'eu-west-2') {
-          sh 'aws eks update-kubeconfig --name capstone-cluster'
+          sh 'aws eks update-kubeconfig --name capstone'
           sh 'kubectl run capstone --image=adriflorence/capstone'
         }
       }
