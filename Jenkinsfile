@@ -24,5 +24,11 @@ pipeline {
         }
       }
     }
+
+    stage('Deploy To K8S Cluster'){
+      steps {
+        sh 'kubectl run capstone --image=adriflorence/capstone'
+      }
+    }
   }
 }
