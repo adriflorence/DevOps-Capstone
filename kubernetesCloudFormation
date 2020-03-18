@@ -1,0 +1,151 @@
+{
+  Capabilities: ["CAPABILITY_IAM"],
+  CreationTime: 2020-03-18 23:14:42.693 +0000 UTC,
+  Description: "EKS nodes (AMI family: AmazonLinux2, SSH access: false, private networking: false) [created and managed by eksctl]",
+  DisableRollback: false,
+  DriftInformation: {
+    StackDriftStatus: "NOT_CHECKED"
+  },
+  EnableTerminationProtection: false,
+  Outputs: [
+    {
+      OutputKey: "FeaturePrivateNetworking",
+      OutputValue: "false"
+    },
+    {
+      ExportName: "eksctl-capstone-nodegroup-ng-2b1914dd::InstanceRoleARN",
+      OutputKey: "InstanceRoleARN",
+      OutputValue: "arn:aws:iam::943013284768:role/eksctl-capstone-nodegroup-ng-2b19-NodeInstanceRole-15C6IM4GIR3JQ"
+    },
+    {
+      OutputKey: "FeatureLocalSecurityGroup",
+      OutputValue: "true"
+    },
+    {
+      ExportName: "eksctl-capstone-nodegroup-ng-2b1914dd::InstanceProfileARN",
+      OutputKey: "InstanceProfileARN",
+      OutputValue: "arn:aws:iam::943013284768:instance-profile/eksctl-capstone-nodegroup-ng-2b1914dd-NodeInstanceProfile-S6YVK7Y95IXX"
+    },
+    {
+      OutputKey: "FeatureSharedSecurityGroup",
+      OutputValue: "true"
+    }
+  ],
+  RollbackConfiguration: {
+
+  },
+  StackId: "arn:aws:cloudformation:eu-west-2:943013284768:stack/eksctl-capstone-nodegroup-ng-2b1914dd/3fc510e0-696e-11ea-8243-06af0f49b59c",
+  StackName: "eksctl-capstone-nodegroup-ng-2b1914dd",
+  StackStatus: "CREATE_COMPLETE",
+  Tags: [
+    {
+      Key: "alpha.eksctl.io/cluster-name",
+      Value: "capstone"
+    },
+    {
+      Key: "alpha.eksctl.io/nodegroup-name",
+      Value: "ng-2b1914dd"
+    },
+    {
+      Key: "eksctl.cluster.k8s.io/v1alpha1/cluster-name",
+      Value: "capstone"
+    },
+    {
+      Key: "alpha.eksctl.io/nodegroup-type",
+      Value: "unmanaged"
+    },
+    {
+      Key: "alpha.eksctl.io/eksctl-version",
+      Value: "0.15.0"
+    },
+    {
+      Key: "eksctl.io/v1alpha2/nodegroup-name",
+      Value: "ng-2b1914dd"
+    }
+  ]
+}
+[ℹ]  stack/eksctl-capstone-cluster = {
+  Capabilities: ["CAPABILITY_IAM"],
+  CreationTime: 2020-03-18 23:03:16.493 +0000 UTC,
+  Description: "EKS cluster (dedicated VPC: true, dedicated IAM: true) [created and managed by eksctl]",
+  DisableRollback: false,
+  DriftInformation: {
+    StackDriftStatus: "NOT_CHECKED"
+  },
+  EnableTerminationProtection: false,
+  Outputs: [
+    {
+      ExportName: "eksctl-capstone-cluster::SubnetsPrivate",
+      OutputKey: "SubnetsPrivate",
+      OutputValue: "subnet-0824fab85ad039185,subnet-03423586f1d25a38f,subnet-03384e637a2cebf62"
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::SubnetsPublic",
+      OutputKey: "SubnetsPublic",
+      OutputValue: "subnet-0df1816ca948bb5a4,subnet-0b44af183a284a833,subnet-0855394b019cd0b93"
+    },
+    {
+      OutputKey: "FeatureNATMode",
+      OutputValue: "Single"
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::ServiceRoleARN",
+      OutputKey: "ServiceRoleARN",
+      OutputValue: "arn:aws:iam::943013284768:role/eksctl-capstone-cluster-ServiceRole-1EW8WRENCZTI"
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::Endpoint",
+      OutputKey: "Endpoint",
+      OutputValue: "https://520C93A25F97E01DC76F834EA96A83A2.sk1.eu-west-2.eks.amazonaws.com"
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::SharedNodeSecurityGroup",
+      OutputKey: "SharedNodeSecurityGroup",
+      OutputValue: "sg-0cec50fc662e12157"
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::VPC",
+      OutputKey: "VPC",
+      OutputValue: "vpc-0360467f1d1860ce4"
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::ClusterSecurityGroupId",
+      OutputKey: "ClusterSecurityGroupId",
+      OutputValue: "sg-0dcb5d24784145fe3"
+    },
+    {
+      OutputKey: "ClusterStackName",
+      OutputValue: "eksctl-capstone-cluster"
+    },
+    {
+      OutputKey: "CertificateAuthorityData",
+      OutputValue: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJd01ETXhPREl6TVRFeU9Gb1hEVE13TURNeE5qSXpNVEV5T0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTFVUCnVtY2JzWXJhT1BvSkFNZ2FUZldUZGxFMjlzempCdDJGcjdwYTRpb0FoMy9oSTJFOUNuOElWOVV5eWcrazZ5b2EKTnN1dktEWlpHaFp3TG5MY0xaZWtxQTNiVXVJNkNINGlvRHBQbWx3YmNHTHU5SDBZNkFjR0tMSm5jbzJtQjRWVgpzelZyam5wZnFwcDY4cE4wcElZcnAyWUZnZXMrTkVpU1BZQlMwQm5nZFNiVllXOTVzRFZoVE5oY2xzYW95YnF4ClFGVDg2S2IxVlhNWmJXRDI5dm00UWJrY0p6M0o5ZG1xekYvYUhVZ3dzWDUzVmM4SHJnOXVDY09nNUxoTTBGYksKbk5pejRhTTZpRWdCYWpQNm1JQ1ZyQURXL2I5a3o3NWpWTWNGY2k3WWhOcmwyQVozSUxLZXpjbk5YeDczckp6RQp1WDZWS2p1c2pVYmZ6cXk3Nk5jQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFLbUtXb3pEWkZoa2pYOHdVWDJzQWVySDZvK2cKbjdvQlhiZDR0VmhvZStpMzdyK1RKTm11SEZaVXlhL2p5ZmJXZ0lZcmlWcXhmR1lwQmFvcEhkTEs4c3p3dUtGbwpzN2xrV01JTXNDU29ZZjdyNnpXUDVHUXh2MWo1NzVZOTFRdGEyU2plVGJNUklDeG4rTmdFMXVoVndWUnVmRG5nClFJKzIvVjAycjErZlBSUFJnMWNUYytRWGlIYXlQSWlKK2xoV083MGJDSWpOTjhlSVF3TUlac25EQnZ5MVFTQXUKT1BLUzNmZXNCOWUwRlEralp5MHNtS3ovY1ZiaUMyMWZ5dFhXZVoxMFZEMktDZlpoSGZVNHRzeXcvMkEwSDZ3VgpFRkZJbnFTSnQraC9RUG9RZ0liYjA2K056d1M5QUtyWE9sc05RVlNBL2VCZDlnOGtSNUpEOGVJYlUxaz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::SecurityGroup",
+      OutputKey: "SecurityGroup",
+      OutputValue: "sg-032f42b1e8192b4a7"
+    },
+    {
+      ExportName: "eksctl-capstone-cluster::ARN",
+      OutputKey: "ARN",
+      OutputValue: "arn:aws:eks:eu-west-2:943013284768:cluster/capstone"
+    }
+  ],
+  RollbackConfiguration: {
+
+  },
+  StackId: "arn:aws:cloudformation:eu-west-2:943013284768:stack/eksctl-capstone-cluster/a6b1b530-696c-11ea-8be8-0a7f7081acf8",
+  StackName: "eksctl-capstone-cluster",
+  StackStatus: "CREATE_COMPLETE",
+  Tags: [{
+      Key: "alpha.eksctl.io/cluster-name",
+      Value: "capstone"
+    },{
+      Key: "eksctl.cluster.k8s.io/v1alpha1/cluster-name",
+      Value: "capstone"
+    },{
+      Key: "alpha.eksctl.io/eksctl-version",
+      Value: "0.15.0"
+    }]
+}
